@@ -97,7 +97,7 @@
        *  Then sorts the array by percentage of asthmatics, and applies asthma percentiles
        *  determines the average difference between percentile smokers/percentile asthmatics for every 5%
        *  example: 0-5% percentile smokers: average of 30th percentile in asthmatics, 5-10% percentile smokers: average of 33 percentile in asthmatics, etc.
-       *  @returns a summary of how smoking relates to asthmatics in terms of percentile and percentages
+       *  @returns a city array with every smoking percentile's average asthma percentile
        */
       public static double[] problemtwo(City[] arr) {
           Arrays.sort(arr, Comparator.comparingDouble(City::getSmokers).reversed());
